@@ -21,10 +21,10 @@ function App() {
         <About />
         <Skills />
         <Experience />
+        <Education />
         <Work />
         <Contact />
         <Footer />
-        <Education />
       </div>
     </div>
 

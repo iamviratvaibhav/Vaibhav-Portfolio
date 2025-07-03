@@ -1,18 +1,14 @@
-import React from 'react'
 import Tilt from 'react-parallax-tilt';
 import { TypeAnimation } from 'react-type-animation';
 function About() {
   return (
     <section id='about'
-    // className ="py-24 pb-24 px-[12vw] md:px-[3vw] lg:px-[10vw] font-sans bg-skills-gradient clip-path-custom-2"
-      // className='py-4 px-[7vw] md:px-[7vw] lg:px-[20vw] font-sans mt-16 md:mt-24 lg:mt-32'
-      //  className='py-4 px-[3vw] md:px-[3vw] lg:px-[10vw] font-sans mt-16 md:mt-24 lg:mt-32'
-    className="py-4 px-[7vw] md:px-[7vw] lg:px-[10vw] font-sans mt-16 md:mt-24 lg:mt-32"
+      className="py-4 px-[5vw] md:px-[5vw] lg:px-[10vw] font-sans mt-16 md:mt-24 lg:mt-3"
     >
       <div className='flex flex-col-reverse md:flex-row justify-between items-center'>
-        {/* left side*/}
+
         <div className='md-w-1/2 text-center md:text-left mt-8 md:mt-0'>
-          {/* greeting side */}
+
           <h1 className='text-3xl sm:text-5xl md:text-6xl font-bold text-white mb-2 leading-tight'>
             Hy, I am
           </h1>
@@ -57,7 +53,6 @@ function About() {
         </div>
 
 
-        {/* Right side */}
         <div className='md:w-1/2 flex justify-center md:justify-end'>
           <Tilt className='w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] border-4 border-purple-700 rounded-full'
             tiltMaxAngleX={20}
@@ -68,7 +63,7 @@ function About() {
             gyroscope={true}
           >
             <img src='./public/1696518476671.jpg'
-            alt='Vaibhav Verma'
+              alt='Vaibhav Verma'
               className='w-full h-full rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]'
             >
             </img>

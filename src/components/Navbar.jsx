@@ -64,17 +64,12 @@ function Navbar() {
             </li>
           ))}
         </ul> */}
-         <ul className="hidden md:flex space-x-8 text-gray-300">
+
+
+        <ul className='hidden md:flex justify-center space-x-8 text-gray-300'>
           {menuItems.map((item) => (
-            <li
-              key={item.id}
-              className={`cursor-pointer hover:text-[#8245ec] ${
-                activeSection === item.id ? "text-[#8245ec]" : ""
-              }`}
-            >
-              <button onClick={() => handleMenuItemClick(item.id)}>
-                {item.label}
-              </button>
+            <li key={item.id} className={`cursor-pointer hover:text-[#8245ec] ${activeSection === item.id ? "text-[#8245ec]" : ""} text-center`}>
+              <button onClick={() => handleMenuItemClick(item.id)}>{item.label}</button>
             </li>
           ))}
         </ul>
