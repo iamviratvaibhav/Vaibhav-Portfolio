@@ -1,12 +1,22 @@
-import { useState, useRef } from 'react'
-import { FaInstagram } from 'react-icons/fa';
+import { useState, useRef, useEffect } from 'react'
+import { FaInstagram, FaArrowUp } from 'react-icons/fa';
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
 
 function Contact() {
 
   const [text, setText] = useState('');
+  const [show, setShow] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setShow(window.scrollY > 300);
+
+    }
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+
+  }, []);
 
   const getChar = (e) => {
     setText(e.target.value)
@@ -46,7 +56,7 @@ function Contact() {
     //     })
     //   }
   }
-  return (
+  return show ? (
     <section
       id='contact'
       className="flex flex-col items-center justify-center py-24 px-[12vw] md:px-[7vw] lg:px-[20vw]"
@@ -90,8 +100,8 @@ function Contact() {
       <div className="mt-8 w-full max-w-md bg-[#0d081f]  p-6 rounded-lg shadow-lg border border-gray-700">
         <h3 className="text-xl font-semibold text-white text-center">Connect on Social Media</h3>
         <p className="text-center text-sm text-gray-400 mt-2">Email: vaibhavverma9595@gmail.com</p>
-        <p className="text-center text-sm text-gray-400">Phone: +91 9874563211</p>
-        <div className="flex justify-center mt-4">
+        <p className="text-center text-sm text-gray-400">Phone: +91 89236XXXXX</p>
+        <div className="flex justify-center mt-4 ">
           <a href='https://www.instagram.com/iamviratvaibhav' target='_blank' rel="noopener noreferrer">
             <FaInstagram className='text-white text-3xl mx-2 hover:text-[#8245ec] cursor-pointer' />
           </a>
@@ -100,7 +110,7 @@ function Contact() {
             <SiLeetcode className='text-white text-3xl mx-2 hover:text-[#8245ec] cursor-pointer' />
           </a>
 
-          <a href='https://leetcode.com/u/iamviratvaibhav/' target='_blank' rel="noopener noreferrer">
+          <a href='https://x.com/itsVermaVaibhav/' target='_blank' rel="noopener noreferrer">
             <FaSquareXTwitter className='text-white text-3xl mx-2 hover:text-[#8245ec] cursor-pointer' />
           </a>
         </div>
@@ -110,10 +120,15 @@ function Contact() {
           <p className="text-sm">All rights reserved.</p>
         </footer>
       </div>
-
+      <button 
+        onClick={()=> window.scrollTo({top: 0, behavior:'smooth'})}
+        className="fixed bottom-10 right-10 bg-purple-600 text-white p-3 rounded-full shadow-lg hover:bg-purple-700 transition duration-300"
+      >
+        <FaArrowUp />
+      </button>
 
     </section>
-  )
+  ) : null;
 }
 
 export default Contact

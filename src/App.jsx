@@ -1,8 +1,7 @@
-import React from 'react';
+
 import About from './components/About';
 import Work from './components/Work';
 import Contact from './components/Contact';
-import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
@@ -24,7 +23,6 @@ function App() {
         <Education />
         <Work />
         <Contact />
-        <Footer />
       </div>
     </div>
 
