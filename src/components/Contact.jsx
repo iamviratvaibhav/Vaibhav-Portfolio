@@ -1,5 +1,4 @@
 import { useState, useRef } from 'react'
-// import { FaInstagram, FaTwitter } from "react-icons/fa";
 import { FaInstagram } from 'react-icons/fa';
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
@@ -81,22 +80,12 @@ function Contact() {
 
           <button type="text"
             className='w-full bg-gradient-to-r cursor-not-allowed ... hover:bg-purple-700 py-3 text-white font-semibold rounded-md bg-purple-600 transition duration-300'
-          // className="w-full bg-gradient-to-r from-purple-600 to-pink-500 py-3 text-white font-semibold rounded-md hover:opacity-90 transition-opacity duration-300"
-          // className="w-full bg-gradient-to-r from-purple-600 to-pink-500 py-3 text-white font-semibold rounded-md hover:opacity-90 transition-opacity duration-300
           >
             Send
           </button>
-          {/* <Toaster /> */}
         </form>
 
-
-
       </div>
-
-      {/* <div className="text-center mt-4 text-white">
-          <p>Email: vaibhavverma9595@gmail.com</p>
-          <p>Phone: +91 9876543210</p>
-        </div> */}
 
       <div className="mt-8 w-full max-w-md bg-[#0d081f]  p-6 rounded-lg shadow-lg border border-gray-700">
         <h3 className="text-xl font-semibold text-white text-center">Connect on Social Media</h3>
