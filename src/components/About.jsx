@@ -37,7 +37,7 @@ function About() {
           </h3>
 
           <p className='text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed'>
-            I am a Full-Stack Developer with 8 months of hands-on experience in designing, developing, and deploying dynamic web applications. Proficient in front-end and back-end technologies, with a strong foundation in JavaScript, React.js  and Node.js with Express for creating robust server-side logic. A quick learner and collaborative team player, dedicated to writing clean, maintainable code and solving complex problems.
+            I am a Full-Stack Developer with 6 months of hands-on experience in designing, developing, and deploying dynamic web applications. Proficient in front-end and back-end technologies, with a strong foundation in JavaScript, React.js  and Node.js with Express for creating robust server-side logic. A quick learner and collaborative team player, dedicated to writing clean, maintainable code and solving complex problems.
           </p>
           <a href="https://drive.google.com/file/d/12wIOLTOOLocg7X3IVOusVYnEE_Abk2ef/view?usp=drive_link"
             target='_blank'
@@ -62,7 +62,7 @@ function About() {
             transitionSpeed={1000}
             gyroscope={true}
           >
-            <img src='./public/1696518476671.jpg'
+            <img src='/1696518476671.jpg'
               alt='Vaibhav Verma'
               className='w-full h-full rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]'
             >
