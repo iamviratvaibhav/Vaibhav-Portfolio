@@ -1,15 +1,3 @@
-// import React from 'react'
-
-// function Work() {
-//   return (
-//     <div>
-      
-//     </div>
-//   )
-// }
-
-// export default Work
-
 
 import React, { useState } from "react";
 import { projects }  from '../constant'
