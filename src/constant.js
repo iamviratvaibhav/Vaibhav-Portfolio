@@ -34,7 +34,6 @@ import netlifyLogo from './assets/tech_logo/netlify.png';
 // import csharpLogo from './assets/tech_logo/csharp.png';
 
 // Experience Section Logo's
-import webverse_logo from './assets/company_logo/webverse_logo.png';
 // import agcLogo from './assets/company_logo/agc_logo.png';
 // import newtonschoolLogo from './assets/company_logo/newtonschool_logo.png';
 import emounting from './assets/company_logo/emounting.png'
@@ -47,7 +46,7 @@ import aktu from './assets/education_logo/aktu.png'
 import sdcet from './assets/education_logo/sdcet.png'
 
 // Project Section Logo's
-import githubdetLogo from './assets/work_logo/github_det.png';
+import profile_finder from './assets/work_logo/profile_finder.png';
 // import csprepLogo from './assets/work_logo/cs_prep.png';
 // import movierecLogo from './assets/work_logo/movie_rec.png';
 // import taskremLogo from './assets/work_logo/task_rem.png';
@@ -55,8 +54,8 @@ import githubdetLogo from './assets/work_logo/github_det.png';
 // import webverLogo from './assets/work_logo/web_dig.png';
 // import cmLogo from './assets/work_logo/cm.png';
 import chatroom from './assets/work_logo/chatroom.png';
-import imagesearchLogo from './assets/work_logo/image_search.png';
-import removebgLogo from './assets/work_logo/remove_bg.png';
+import todolist from './assets/work_logo/todolist.png';
+import tracker_img from './assets/work_logo/tracker_img.png';
 
 
 export const SkillsInfo = [
@@ -205,13 +204,13 @@ export const education = [
 export const projects = [
   {
     id: 0,
-    title: "GitHub Profile Detective",
+    title: "GitHub Profile Finder",
     description:
       "A powerful and user-friendly React.js application designed to uncover and showcase detailed GitHub profile information. Simply enter a GitHub username, and the app fetches comprehensive data, including profile stats, repositories, followers, and contributions. The intuitive interface ensures a seamless experience, making it a must-visit tool for developers and recruiters.",
-    image: githubdetLogo,
+    image: profile_finder,
     tags: ["HTML", "CSS", "JavaScript", "React JS", "API"],
-    github: "https://github.com/iamviratvaibhav",
-    webapp: "https://githubprofiledetective.netlify.app/",
+    github: "https://github.com/iamviratvaibhav/Account-Finder-Github.git",
+    webapp: "https://account-finder-github-seven.vercel.app/",
   },
   // {
   //   id: 1,
@@ -275,24 +274,31 @@ export const projects = [
   // },
   {
     id: 7,
-    title: "Image Search App",
+    title: "Todo List with Image",
     description:
-      "A React.js-based image search application that allows users to search and download high-quality images from the web. Built using external APIs to ensure a vast library of results for various queries.",
-    image: imagesearchLogo,
-    tags: ["React JS", "API", "Search Feature", "CSS", "Javascript"],
-    // github: "https://github.com/codingmastr/Image-Search-App" ,
-    github: "https://imagsearch.netlify.app/" ,
-    webapp: "https://imagsearch.netlify.app/",
+      "I build a todo list app with images. It is a simple app that lets you add, delete and mark images as completed. It also has a progress tracker feature for tracking the progress of your tasks.",
+    image: todolist,
+    tags: ["React JS", "Image Upload", "Tailwind-CSS", "Javascript"],
+    github: "https://github.com/iamviratvaibhav/Small-Task.git" ,
+    webapp: "https://github.com/iamviratvaibhav/Small-Task.git",
   },
   {
     id: 8,
-    title: "Image Background Remover",
+    title: "Manage large datasets",
     description:
-      "An efficient background removal app built with React.js and API integration. Users can upload any image, remove the background, and download the transparent version for further use.",
-    image: removebgLogo,
-    tags: ["React JS", "API", "Image Processing", "HTML", "CSS", "Javascript"],
-    github: "https://github.com/iamviratvaibhav",
-    webapp: "https://removeyourbg.netlify.app/",
+      `Data's is fatching from Satellite and how to handle this large data on FE screen by using the code optimization.
+      # Demonstrates handling of real-world API + large data
+      # Built using Tailwind + animation + search interactivity
+      # 64k+ entries efficiently using virtualized rendering
+      # Open/Public APIs used
+      # Modular components (SearchBar, Filters, SatelliteTable)
+      # Paginated or chunked API loading support (configurable)`,
+
+    // image: removebgLogo,
+    image: tracker_img,
+    tags: ["React JS", "OpenAPI", "Tailwind-CSS","TypeScript"],
+    github: "https://github.com/iamviratvaibhav/Satellite-Data-Finder-from-Large-dataset-.git",
+    webapp: "https://drive.google.com/file/d/1SjZ104tvzblAkwui58QnH47gy--3WZTZ/view?usp=drive_link",
   },
   {
     id: 9,
@@ -301,7 +307,7 @@ export const projects = [
       "Real time chat application is based on MERN stack technology, It is a real time messenger in which user can send to another person message without loading or refresh the page, with Typing and Date (Today, Yesterday) features. ",
     image: chatroom,
     tags: ["React.js", "Node.js", "MongoDB Compass", "Express.js", "Socket.io", "Tailwind CSS"],
-    github: "https://github.com/iamviratvaibhav/ChatRoom-Application-main",
+    // github: "https://github.com/iamviratvaibhav/ChatRoom-Application-main",
     // webapp: "https://codingmasterweb.in/",
   },
 ];  

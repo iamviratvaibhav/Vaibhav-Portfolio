@@ -1,4 +1,5 @@
 import Tilt from 'react-parallax-tilt';
+import ProfileCounter from './ProfileCounter';
 import { TypeAnimation } from 'react-type-animation';
 function About() {
   return (
@@ -68,6 +69,9 @@ function About() {
             >
             </img>
           </Tilt>
+          {/* <div>
+            <ProfileCounter />
+          </div> */}
         </div>
       </div>
 
